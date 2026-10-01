@@ -1,0 +1,21 @@
+{
+  "name": "branch-demo",
+  "timeUnit": "s",
+  "nuclides": [
+    { "id": "A", "halfLife": 10 },
+    { "id": "B", "halfLife": 15 },
+    { "id": "C", "halfLife": 10 },
+    { "id": "D", "halfLife": 30 },
+    { "id": "E", "halfLife": 20 },
+    { "id": "S", "stable": true }
+  ],
+  "edges": [
+    { "parent": "A", "child": "B", "branchingRatio": 0.6 },
+    { "parent": "A", "child": "C", "branchingRatio": 0.3 },
+    { "parent": "B", "child": "D", "branchingRatio": 0.5 },
+    { "parent": "C", "child": "D", "branchingRatio": 0.8 },
+    { "parent": "C", "child": "E", "branchingRatio": 0.2 },
+    { "parent": "D", "child": "S", "branchingRatio": 1 },
+    { "parent": "E", "child": "S", "branchingRatio": 1 }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "base",
+  "timeUnit": "s",
+  "initialAtoms": { "A": 1000 },
+  "injections": [
+    { "start": 0, "end": 20, "rates": { "S": 5, "B": 2 } },
+    { "start": 20, "end": 40, "rates": { "S": 10 } }
+  ],
+  "times": [0, 5, 10, 15, 20, 25, 30, 40, 60]
+}
