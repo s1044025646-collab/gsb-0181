@@ -1,0 +1,28 @@
+{
+  "name": "decay-chain-backend",
+  "version": "1.0.0",
+  "description": "放射性衰变链活度与累积衰变计算后端（教学/校核用，TypeScript + Node.js + SQLite）",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "decay-cli": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-sqlite node_modules/vitest/vitest.mjs run",
+    "test:watch": "node --experimental-sqlite node_modules/vitest/vitest.mjs",
+    "start": "node --experimental-sqlite dist/server.js",
+    "dev": "tsx --experimental-sqlite src/server.ts",
+    "demo": "tsx --experimental-sqlite demo/run-demo.ts",
+    "typecheck": "tsc -p tsconfig.test.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}

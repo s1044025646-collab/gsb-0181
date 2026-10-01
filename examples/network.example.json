@@ -1,0 +1,21 @@
+{
+  "versionId": "net-example-v1",
+  "timeUnit": "s",
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "nuclides": [
+    { "id": "A", "name": "示例核素A", "halfLife": 10 },
+    { "id": "B", "name": "示例核素B", "halfLife": 20 },
+    { "id": "C", "name": "示例核素C", "halfLife": 40 },
+    { "id": "D", "name": "示例核素D", "halfLife": 15 },
+    { "id": "E", "name": "稳定终点E", "halfLife": null },
+    { "id": "F", "name": "注入源F", "halfLife": 80 }
+  ],
+  "edges": [
+    { "parent": "A", "child": "B", "branchFraction": 1.0 },
+    { "parent": "B", "child": "C", "branchFraction": 0.3 },
+    { "parent": "B", "child": "D", "branchFraction": 0.6 },
+    { "parent": "C", "child": "E", "branchFraction": 1.0 },
+    { "parent": "D", "child": "E", "branchFraction": 1.0 },
+    { "parent": "F", "child": "B", "branchFraction": 0.8 }
+  ]
+}

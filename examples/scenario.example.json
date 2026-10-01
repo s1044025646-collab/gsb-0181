@@ -1,0 +1,15 @@
+{
+  "scenarioId": "scn-example-1",
+  "networkVersionId": "net-example-v1",
+  "label": "固定示例工况：A 初始 1000，F 分两段注入，稳定核素 E 恒速注入",
+  "initialAtoms": { "A": 1000, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0 },
+  "injections": [
+    { "nuclide": "F", "tStart": 0, "tEnd": 30, "rate": 5 },
+    { "nuclide": "F", "tStart": 60, "tEnd": 120, "rate": 2 },
+    { "nuclide": "E", "tStart": 0, "tEnd": 50, "rate": 1 }
+  ],
+  "tStart": 0,
+  "tEnd": 200,
+  "nPoints": 201,
+  "createdAt": "2026-01-01T00:00:00.000Z"
+}
